@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,10 +68,58 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdicionarSocorrista.aspx" />
+    <Content Include="AdicionarUtente.aspx" />
+    <Content Include="AdicionarVisita.aspx" />
+    <Content Include="Socorristas.aspx" />
+    <Content Include="Utentes.aspx" />
+    <Content Include="Visitas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdicionarSocorrista.aspx.cs">
+      <DependentUpon>AdicionarSocorrista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdicionarSocorrista.aspx.designer.cs">
+      <DependentUpon>AdicionarSocorrista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdicionarUtente.aspx.cs">
+      <DependentUpon>AdicionarUtente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdicionarUtente.aspx.designer.cs">
+      <DependentUpon>AdicionarUtente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdicionarVisita.aspx.cs">
+      <DependentUpon>AdicionarVisita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdicionarVisita.aspx.designer.cs">
+      <DependentUpon>AdicionarVisita.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Socorristas.aspx.cs">
+      <DependentUpon>Socorristas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Socorristas.aspx.designer.cs">
+      <DependentUpon>Socorristas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utentes.aspx.cs">
+      <DependentUpon>Utentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utentes.aspx.designer.cs">
+      <DependentUpon>Utentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitas.aspx.cs">
+      <DependentUpon>Visitas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitas.aspx.designer.cs">
+      <DependentUpon>Visitas.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

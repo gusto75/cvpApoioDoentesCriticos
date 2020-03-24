@@ -13,6 +13,8 @@ namespace CVP_EstadoEmergencia
         SqlConnection con = new SqlConnection(@"Data Source=GUSTOWINDOWS;Initial Catalog=cvpAssistenciaUtentes;Integrated Security=True");
         string nomeSocorrista;
         int newIdSocorrista;
+        string username;
+        int password;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -25,7 +27,10 @@ namespace CVP_EstadoEmergencia
             SqlCommand cmd = con.CreateCommand();
             nomeSocorrista = TextBox1.Text;
             newIdSocorrista = GetNewidSocorrista(con) + 1;
-            cmd.CommandText = "INSERT INTO Socorrista VALUES('"+newIdSocorrista+"','"+nomeSocorrista+"')";
+            username = TextBox3.Text;
+            password = TextBox4.Text.GetHashCode();
+
+            cmd.CommandText = "INSERT INTO Socorrista VALUES('"+newIdSocorrista+"','"+nomeSocorrista+"','"+username+"','"+password+"')";
             cmd.ExecuteNonQuery();
             con.Close();
             Response.Redirect("Socorristas.aspx");

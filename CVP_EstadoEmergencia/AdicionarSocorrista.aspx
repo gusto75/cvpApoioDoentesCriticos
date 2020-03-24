@@ -21,6 +21,13 @@
             <asp:TextBox ID="TextBox1" runat="server" Height="21px" Width="508px"></asp:TextBox>
         </p>
         <p>
+            Username:
+            <asp:TextBox ID="TextBox3" runat="server" Width="380px"></asp:TextBox>
+        </p>
+        <p>
+            Password: <asp:TextBox ID="TextBox4" runat="server" TextMode="Password" Width="385px"></asp:TextBox>
+        </p>
+        <p>
             <asp:Button ID="Button1" runat="server" Text="Adicionar Socorrista" Width="286px" OnClick="Button1_Click" />
         &nbsp;&nbsp;&nbsp;
             </p>

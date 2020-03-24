@@ -10,7 +10,7 @@
 namespace CVP_EstadoEmergencia {
     
     
-    public partial class AdicionarSocorrista {
+    public partial class login {
         
         /// <summary>
         /// form1 control.
@@ -40,15 +40,6 @@ namespace CVP_EstadoEmergencia {
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
         
         /// <summary>
-        /// TextBox4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
-        
-        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>
@@ -56,5 +47,14 @@ namespace CVP_EstadoEmergencia {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }

@@ -19,21 +19,21 @@
 
      if (isset($_POST['add']))
      {
-        //$idSocorrista=$_POST['socorristaSelect'];
-        $socorrista=$_POST['socorristaSelect'];
-        $sql1="SELECT idSocorrista FROM socorrista WHERE nomeSocorrista='$socorrista'";
-        $idSocorrista=mysqli_query($link,$sql1);
+        $idSocorrista=$_POST['socorristaSelect'];
+        //$socorrista=$_POST['socorristaSelect'];
+        //$sql1="SELECT idSocorrista FROM socorrista WHERE nomeSocorrista='$socorrista'";
+        //$idSocorrista=mysqli_query($link,$sql1);
         
 
-        //$idUtente=$_POST['utenteSelect'];
-        $utente=$_POST['utenteSelect'];
-        $sql2="SELECT idUtente FROM utente WHERE nomeUtente='$utente'";
-        $idUtente=mysqli_query($link,$sql2);
+        $idUtente=$_POST['utenteSelect'];
+        //$utente=$_POST['utenteSelect'];
+        //$sql2="SELECT idUtente FROM utente WHERE nomeUtente='$utente'";
+        //$idUtente=mysqli_query($link,$sql2);
 
-        //$idMotivo=$_POST['motivoSelect'];
-        $motivo=$_POST['motivoSelect'];
-        $sql3="SELECT idMotivo FROM motivo WHERE descricaoMotivo='$motivo'";
-        $idMotivo=mysqli_query($link,$sql3);
+        $idMotivo=$_POST['motivoSelect'];
+        //$motivo=$_POST['motivoSelect'];
+        //$sql3="SELECT idMotivo FROM motivo WHERE descricaoMotivo='$motivo'";
+        //$idMotivo=mysqli_query($link,$sql3);
 
         $anoVisita=$_POST["anoVisita"];
         $mesVisita=$_POST["mesVisita"];

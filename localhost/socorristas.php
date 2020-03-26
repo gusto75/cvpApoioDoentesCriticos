@@ -20,13 +20,13 @@ echo "<tr>";
 echo "<th>Número de Socorrista</th>";
 echo "<th>Nome do Socorrista</th>";
 echo "<th>Contacto</th>";
-echo "<th></th>";
+//echo "<th></th>";
 echo "</tr>";
 while($data=mysqli_fetch_row($q))
 {
     echo "<tr>";
     echo "<td> $data[0]</td><td>$data[1]</td><td>$data[2]</td>";
-    echo "<td><a href=''>Editar</a>";
+    //echo "<td><a href=''>Editar</a>";
     echo "</tr>";
 }
 echo "</table>";

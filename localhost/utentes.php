@@ -26,13 +26,13 @@ echo "<th>Freguesia</th>";
 echo "<th>Morada</th>";
 echo "<th>Contactada</th>";
 echo "<th>Data de Contacto</th>";
-echo "<th></th>";
+//echo "<th></th>";
 echo "</tr>";
 while($data=mysqli_fetch_row($q))
 {
     echo "<tr>";
     echo "<td> $data[0]</td><td>$data[1]</td><td>$data[2]</td><td>$data[3]</td><td>$data[4]</td><td>$data[5]</td><td>$data[6]</td><td>$data[7]</td>";
-    echo "<td><a href=''>Editar</a>";
+    //echo "<td><a href=''>Editar</a>";
     echo "</tr>";
 }
 echo "</table>";
